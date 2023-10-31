@@ -15,10 +15,11 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
+    background-color: pink;
 }
 
 a {
-  color: inherit;
+  color: rgb(38, 0, 255);
   text-decoration: none;
 }
 
