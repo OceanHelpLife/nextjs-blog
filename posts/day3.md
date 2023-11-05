@@ -9,7 +9,8 @@ Markdown（マークダウン）は、テキストベースで文書を記述す
 ダウンとアップで何が違うのかさっぱり分からなかったので調べると、  
 マークアップ言語（HTML等）はテキストの構造や意味を定義するために存在します。  
 マークダウン形式はテキストのフォーマットを簡単・直感的に行うために存在します。  
-とのことでした。  g
+とのことでした。
+
 なんとなく分かったようで、正直よく分からない・・・  
 ただ、確かにMarkdown形式で書くのは簡単かつ直感的だなぁと感じる部分がありました。
 
@@ -31,7 +32,7 @@ Markdown（マークダウン）は、テキストベースで文書を記述す
 3. **Link**  
 [Google](https://www.google.com/)
 
-4. **画像挿入+リンク**  
+4. **画像挿入**  
 ![Googleロゴ](https://www.google.com/images/logo.png)
 
 5. **引用**  
@@ -44,6 +45,12 @@ Markdown（マークダウン）は、テキストベースで文書を記述す
 比較対象+復習として画像も挿入してみます。  
 ![スクリーンショット](/images/screenshot1104.png)
 
+7. **改行**
+主に3つのやり方がある
+- 文末に半角空白スペースを2つつける-動作する
+- 1行空白の行を入れる-動作する
+- ```<br>```タグを使う-動作せず・・・
+＊動作するしないについては、私の環境上で。
 
 ## web制作の備忘録として
 
@@ -58,13 +65,15 @@ Markdown（マークダウン）は、テキストベースで文書を記述す
 
 ## 言語について
 
-ITエンジニアの領域に足を踏み入れる際の言語選択で悩みました。Excel VBAの経験はあったものの、基本的には初心者としてのスタートで、いろいろ調べてみました。
+ITエンジニアの領域に足を踏み入れる際の言語選択で悩みました。  
+Excel VBAの経験はあったものの、基本的には初心者としてのスタートで、いろいろ調べてみました。
 
 - Python
 - PHP（WordPress等で使用）
-- React（Next.js、ネットフリックスで使用）
+- JavaScript
 
-結局、ネットフリックスで使われていれば間違えないだろうと考え、React(Next.js)を選択しました。
+結局、ネットフリックスで使われていれば間違えないだろうと考え
+Javascript-React-Next.jsを選択しました。
 
 ## Next.jsの学習スタートについて
 
@@ -86,4 +95,5 @@ Progateでの学習は難しく、まるで辞書を読んでいるようでし�
 
 - [Next.jsのチュートリアルでブログアプリを作ってみた](https://dev.classmethod.jp/articles/next-js-tutorial-looking-back/)
 - [Create a Next.js App](https://nextjs.org/learn-pages-router/basics/create-nextjs-app)
-- [独自ドメインを永久無料で取得する方法とは？&#8203;``【oaicite:0】``&#8203;](https://www.value-domain.com/media/free-domain/#
+- [独自ドメインを永久無料で取得する方法とは？](https://www.value-domain.com/media/free-domain/)
+- [【Markdown】改行するための書き方について徹底解説！](https://www.sejuku.net/blog/77336)
