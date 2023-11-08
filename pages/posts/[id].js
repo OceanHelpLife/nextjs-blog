@@ -2,7 +2,6 @@ import Date from '../../components/date';
 import Head from 'next/head';
 import Layout from '../../components/layout';
 import utilStyles from '../../styles/utils.module.css';
-
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
 export async function getStaticProps({ params }) {
@@ -32,6 +31,7 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
+        <img src={postData.thumbnail} alt={`Thumbnail for ${postData.title}`} />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>

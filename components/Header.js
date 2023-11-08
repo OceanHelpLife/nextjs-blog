@@ -19,7 +19,7 @@ export default function Header() {
       </div>
       <div className={styles.menuContainer}>
         <Link href="/">Home</Link>
-        <Link href="/about">これから</Link>
+        <Link href="/blog">Blog</Link>
         <Link href="/contact">これから</Link>
       </div>
     </div>
