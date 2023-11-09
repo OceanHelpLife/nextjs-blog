@@ -1,4 +1,5 @@
 import Date from '../../components/date';
+import Image from 'next/image';
 import Head from 'next/head';
 import Layout from '../../components/layout';
 import utilStyles from '../../styles/utils.module.css';
@@ -31,9 +32,17 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <img src={postData.thumbnail} alt={`Thumbnail for ${postData.title}`} />
+        <Image
+          src={postData.thumbnail}
+          width={1280}
+          height={720} 
+          alt={`Thumbnail for ${postData.title}`}
+          layout='responsive'
+          className={utilStyles.thumbnailImage}
+        />        
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
   );
 }
+

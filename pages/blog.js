@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Date from '../components/date';
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
@@ -25,16 +26,19 @@ export default function Home({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingLg}>Blog</h1>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            // <li className={utilStyles.listItem} key={id}>
-            //   {title}
-            //   <br />
-            //   {id}
-            //   <br />
-            //   {date}
-            // </li>
+          {allPostsData.map(({ id, date, title, thumbnail }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`/posts/${id}`}>
+                 <Image
+                    src={thumbnail}
+                    width={1280}
+                    height={720} 
+                    alt={`Thumbnail for ${title}`}
+                    layout='responsive'
+                    className={utilStyles.thumbnailImage}
+                  />
+                  <h3 className={utilStyles.headingLg}>{title}</h3>
+              </Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
@@ -42,6 +46,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+
       </section>
     </Layout>
   );

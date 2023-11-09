@@ -50,3 +50,7 @@
   .lightText {
     color: #666;
   }
+
+  .thumbnailImage {
+    border-radius: 15px; /* サムネイルの角を丸くする */
+  }

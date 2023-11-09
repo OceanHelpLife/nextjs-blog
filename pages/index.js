@@ -1,19 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image'
 import Date from '../components/date';
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 
-// 4つのデータに絞るために一旦コメントアウト
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData();
-//   return {
-//     props: {
-//       allPostsData,
-//     },
-//   };
-// }
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData().slice(0, 4);
@@ -37,25 +29,25 @@ export default function Home({ allPostsData }) {
 
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        {/* <h2 className={utilStyles.headingLg}>Blog</h2> */}
         <h2 className={utilStyles.headingLg}>
           <Link href="/blog">
-            Blog {/* Clickable Blog Text */}
+            Blog
           </Link>
         </h2>
-
-        
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            // <li className={utilStyles.listItem} key={id}>
-            //   {title}
-            //   <br />
-            //   {id}
-            //   <br />
-            //   {date}
-            // </li>
+          {allPostsData.map(({ id, date, title, thumbnail }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`/posts/${id}`}>
+                  <Image
+                    src={thumbnail}
+                    width={1280}
+                    height={720} 
+                    alt={`Thumbnail for ${title}`}
+                    layout='responsive'
+                    className={utilStyles.thumbnailImage}
+                  />
+                  <h3 className={utilStyles.headingLg}>{title}</h3>
+              </Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
