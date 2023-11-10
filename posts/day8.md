@@ -35,7 +35,7 @@ Next.jsでは、特にパフォーマンスや最適化を考慮する場合に<
 ```
 
 #### [id].js変更後
-```js
+```javascript
 import Image from 'next/image'
 
 <Image
