@@ -3,6 +3,9 @@ title: 'コードを見やすくする'
 date: '2023-11-10'
 thumbnail: '/images/サムネ9.png'
 ---
+
+目次
+
 ## コードを見やすくする
 調べてもなんて言えば良いのかはわかりませんでしたが、コードスニペットがシンタックスハイライトされてブログの本文中に表示されるような機能を作りたいと思います。  
 ＊コードスニペット：　コードの断片（変更箇所のみを表示させる）  
@@ -98,12 +101,12 @@ console.log('Hello, world!');
 
 ## メモ
 [Next.js のための Remark / Rehype 入門](https://qiita.com/sankentou/items/f8eadb5722f3b39bbbf8)が初学者にも分かりやすく仕組みを解説。
-Legacyと言われる、現在使用が推奨されていないやり方で進めていても、個人学習だと気付くのが難しいなと実感した1日でした。
+Legacyと言われる、現在使用が推奨されていないやり方で進めていても、個人学習だと気付くのが難しいなと実感した1日でした。  
 【remark-highlight】をその通りにコピペしても動かない⇨なぜ？⇨いろいろと調べる。⇨やっぱりコードは合っていそう⇨調べる⇨わからない・・・というような状態で2時間くらい辛い時間を過ごしました。  
 調べ方みたいなのも上手になるのか、やっぱりこういうのはちゃんとメンターみたいな人を探す必要があるのか・・・  
 スクール高いから独学が良いんだけれど・・・
 
 
 ## 参考文献
-[Next.js 13のnext/image（next/future/image）へ移行する](https://ebisu.com/note/next-image-migration/)
+[Next.js 13のnext/image（next/future/image）へ移行する](https://ebisu.com/note/next-image-migration/)  
 [Next.js のための Remark / Rehype 入門](https://qiita.com/sankentou/items/f8eadb5722f3b39bbbf8)
