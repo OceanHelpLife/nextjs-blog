@@ -1,11 +1,9 @@
 import Head from 'next/head';
 import Header from './Header';  
 import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = '凡人サラリーマンの副業検証';
-export const siteTitle = '凡人(挑戦中)';
+export const siteTitle = '凡人サラリーマン(奮闘中)';
 
 export default function Layout({ children, home }) {
   return (
