@@ -32,14 +32,26 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <Image
+        {/* <Image
           src={postData.thumbnail}
           width={1280}
           height={720} 
           alt={`Thumbnail for ${postData.title}`}
           layout='responsive'
           className={utilStyles.thumbnailImage}
-        />        
+        />         */}
+          <Image
+            src={postData.thumbnail}
+            width={1280}
+            height={720} 
+            alt={`Thumbnail for ${postData.title}`}
+            className={utilStyles.thumbnailImage}
+            sizes='100vw'
+            style={{
+              width: '100%',
+              height: 'auto'
+            }}    
+          />
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>

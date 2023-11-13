@@ -30,7 +30,7 @@ export default function Home({ allPostsData }) {
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingLg}>
-          <Link href="/blog">
+          <Link href="/posts">
             Blog
           </Link>
         </h1>
@@ -38,14 +38,32 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, date, title, thumbnail }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
-                  <Image
+                  {/* <Image
                     src={thumbnail}
                     width={1280}
                     height={720} 
                     alt={`Thumbnail for ${title}`}
                     layout='responsive'
                     className={utilStyles.thumbnailImage}
-                  />
+                  /> */}
+                  <Image
+                    src={thumbnail}
+                    width={1280}
+                    height={720} 
+                    alt={`Thumbnail for ${title}`}
+                    className={utilStyles.thumbnailImage}
+                    sizes='100vw'
+                    style={{
+                      width: '100%',
+                      height: 'auto'
+                    }}    
+                  />                 
+                  {/* <Image
+                    src={thumbnail}
+                    alt={`Thumbnail for ${title}`}
+                    className={utilStyles.thumbnailImage}
+                    style={{ width: '100%', height: 'auto', aspectRatio: '1280 / 720' }}
+                  /> */}
                   <h3 className={utilStyles.headingLg}>{title}</h3>
               </Link>
               <br />
@@ -55,7 +73,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-        <Link href="/blog">more(Blog一覧を表示)</Link>
+        <Link href="/posts">more(Blog一覧を表示)</Link>
       </section>
     </Layout>
   );

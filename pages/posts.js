@@ -15,7 +15,6 @@ export async function getStaticProps() {
   };
 }
 
-
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
@@ -29,14 +28,18 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, date, title, thumbnail }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
-                 <Image
+              <Image
                     src={thumbnail}
                     width={1280}
                     height={720} 
                     alt={`Thumbnail for ${title}`}
-                    layout='responsive'
                     className={utilStyles.thumbnailImage}
-                  />
+                    sizes='100vw'
+                    style={{
+                      width: '100%',
+                      height: 'auto'
+                    }}    
+                  />     
                   <h3 className={utilStyles.headingLg}>{title}</h3>
               </Link>
               <br />

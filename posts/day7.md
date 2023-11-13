@@ -15,13 +15,12 @@ thumbnail: '/images/サムネ1.jpg'
 nextjs-blog/posts/sample1・・・.mdという形でブログ記事を作成しています。  
 
 nextjs-blog/lib/posts.jsファイルには、上記のマークダウンファイルからデータを取得して、処理をする関数群が定義されています。 
-今回は 
-↓これはnext.jsのチュートリアル時から変更を一切加えていません。
-ざっくりと、  
+今回は ざっくりと、  
 getSortedPostsData 関数は、マークダウンファイルの一覧を取得し、それらを日付でソートしてリストとして返します。  
 getAllPostIds 関数は、各投稿のID（ファイル名から.mdを取り除いたもの）を取得して、動的ルーティングに必要なパラメータのリストを生成します。
 getPostData 関数は、特定のIDに基づいて個々のマークダウンファイルを読み込み、gray-matterを使用してFrontmatterを解析し、remarkを使用してマークダウンをHTMLに変換します。
 
+↓これはnext.jsのチュートリアル時から変更を一切加えていません。
 ## nextjs-blog/lib/posts.js
 ```js
 import { remark } from 'remark';
