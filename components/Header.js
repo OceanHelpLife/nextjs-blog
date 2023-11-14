@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './layout.module.css';
 
-export default function Header() {
+export default function header() {
   const name = '凡人サラリーマンの副業検証';
 
   return (

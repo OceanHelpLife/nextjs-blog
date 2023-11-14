@@ -1,7 +1,7 @@
 ---
 title: 'next.js13のimageコンポーネントについて'
-date: '2023-11-12'
-thumbnail: '/images/サムネ11.png'
+date: '2023-11-13'
+thumbnail: '/images/サムネ12.png'
 ---
 ## はじめに
 ずっと気になっていることがありました。
@@ -11,6 +11,8 @@ Image with src "/images/サムネ10.png" has legacy prop "layout". Did you forge
 Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
 ```
 なんとなく嫌なので、正しいImageコンポーネントの使い方に今のうちに直しておきます。  
+
+## 目次
 
 ## next.jsのイメージコンポーネントについて
 私のサイトにとって一番大きな変更はLayout属性が使えなくなったことです。  
@@ -54,7 +56,7 @@ Read more: https://nextjs.org/docs/messages/next-image-upgrade-to-13
 今週はなんとしてもcssでサイトの見た目を整える！
 
 ## メモ
-平日は時間を確保するのが厳しい・・・
+平日は時間を確保するのが厳しい・・・ 
 
 ## 参考
 [Next.js 13のnext/image（next/future/image）へ移行する](https://ebisu.com/note/next-image-migration/)
