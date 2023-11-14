@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Header from './header';  
+import Header from './Header';  
 import styles from './layout.module.css';
 import Link from 'next/link';
 
