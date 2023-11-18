@@ -51,10 +51,8 @@ export default function Home({ allPostsData }) {
                 </Link>
               </li>
             ))}
+            <Link href="/posts" className='block border gray-300 mb-2 mt-6'>___more(Blog一覧を表示)___</Link>
           </ul>
-        </div>
-        <div className="flex justify-center items-center">
-          <Link href="/posts" className='block border gray-300'>more(Blog一覧を表示)</Link>
         </div>
       </section>
     </Layout>

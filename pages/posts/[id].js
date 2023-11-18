@@ -33,10 +33,10 @@ export default function Post({ postData }) {
         </div>
           <Image
             src={postData.thumbnail}
-            width={1280}
-            height={720} 
+            width={1200}
+            height={400} 
             alt={`Thumbnail for ${postData.title}`}
-            className=""
+            className="w-full h-auto object-cover object-center rounded-lg"
             sizes='100vw'
             style={{
               width: '100%',

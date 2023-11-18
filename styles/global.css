@@ -2,20 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-orange-50;
+}
+
 h1 {
-    color: #4a5568; /* ダークグレー */
-    font-size: 2.25rem; /* 約36px */
-    font-weight: 700; /* 太字 */
-  }
-  
-  h2 {
-    color: #4a5568;
-    font-size: 1.5rem; /* 約24px */
-    font-weight: 600;
-  }
-  
-  h3 {
-    color: #4a5568;
-    font-size: 1.25rem; /* 約20px */
-    font-weight: 500;
-  }
+  @apply text-3xl font-bold text-gray-800 mt-4;
+}
+
+h2 {
+  @apply text-2xl font-semibold text-gray-700 border-l-4 border-gray-700 pl-2 mt-4 mb-2;
+}
+
+h3 {
+  @apply text-xl font-semibold text-gray-700 border-l-4 border-gray-700 pl-2 mt-4;
+}
+
+h4 {
+  @apply text-lg font-medium text-gray-700 border-l-4 border-gray-700 pl-2 mt-4;
+}
+
+h5 {
+  @apply text-base font-medium text-gray-700 border-l-4 border-gray-700 pl-2 mt-4;
+}
+
+ul {
+  @apply list-none bg-orange-100;
+}
+
+ul > li {
+  @apply mb-2;
+}
+
+ul ul {
+  @apply pl-4 mt-2;
+}
+
+ul ul > li {
+  @apply text-sm text-orange-600;
+}
+
+ul ul ul {
+  @apply pl-4 mt-1;
+}
+
+ul ul ul > li {
+  @apply text-xs text-orange-500;
+}
+
+ul ul ul ul {
+  @apply pl-4 mt-1;
+}
+
+
+ul ul ul ul > li {
+  @apply text-xs text-orange-400;
+} 
+
+a {
+  @apply text-blue-600 hover:text-blue-800 transition duration-300;
+}
+
+blockquote {
+  @apply italic border-l-4 border-gray-400 pl-4 my-4;
+}
+
+img{
+  @apply w-full h-auto object-cover object-center rounded-lg
+}
