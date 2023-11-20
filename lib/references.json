@@ -1,0 +1,19 @@
+[
+    {
+      "id": "book230720",
+      "title": "出版されている本の表紙を、紙媒体に無断で載せていいか",
+      "thumbnail": "https://labohan.com/blog/wp-content/uploads/2023/07/230720_1200-1024x576.jpg",
+      "url": "https://labohan.com/blog/book230720/",
+      "description": "お試し１",
+			"category": "ブック" 
+    },
+    
+    {
+      "id": "book230720",
+      "title": "参考にしたブログのタイトル",
+      "thumbnail": "https://labohan.com/blog/wp-content/uploads/2023/07/230720_1200-1024x576.jpg",
+      "url": "https://labohan.com/blog/book230720/",
+      "description": "簡単な説明やコメント",
+      "category": "お試し２" 
+    }
+  ]

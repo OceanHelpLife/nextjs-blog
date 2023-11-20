@@ -67,6 +67,6 @@ blockquote {
   @apply italic border-l-4 border-gray-400 pl-4 my-4;
 }
 
-img{
+img {
   @apply w-full h-auto object-cover object-center rounded-lg
 }

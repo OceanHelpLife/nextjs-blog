@@ -1,0 +1,29 @@
+現在のNext.jsのバージョン:現在のNext.jsのバージョン
+プロジェクトのファイル構造:
+
+/Users/ocean/nextjs-blog/pages
+├── _app.js
+├── api
+│   └── hello.js
+├── index.js
+├── posts
+│   └── [id].js
+├── posts.js
+├── study.js
+├── study2.js
+└── study3.js
+
+/Users/ocean/nextjs-blog/components
+├── Header.js
+├── date.js
+└── layout.js
+
+/Users/ocean/nextjs-blog/lib
+└── posts.js
+
+/Users/ocean/nextjs-blog/posts
+└── sample.md
+
+/Users/ocean/nextjs-blog/styles
+├── global.css
+└── github-dark.css

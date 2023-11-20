@@ -18,7 +18,7 @@ export default function Header() {
     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
       <Link href="/" className="mr-5 hover:text-gray-900">HOME</Link>
       <Link href="/posts" className="mr-5 hover:text-gray-900">BLOG</Link>
-      <Link href="/about" className="mr-5 hover:text-gray-900">準備中</Link>
+      <Link href="/references" className="mr-5 hover:text-gray-900">REFERENCE</Link>
       <Link href="/works" className="mr-5 hover:text-gray-900">準備中</Link>
     </nav>
   </div>
