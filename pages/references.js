@@ -5,13 +5,13 @@ import Layout, { siteTitle } from '../components/layout';
 import getSortedReferencesData from '../lib/references'; 
 
 export async function getStaticProps() {
-    const allReferencesData = await getSortedReferencesData(); 
-    return {
-      props: {
-        allReferencesData,
-      },
-    };
-  }
+  const allReferencesData = await getSortedReferencesData(); 
+  return {
+    props: {
+      allReferencesData,
+    },
+  };
+}
 export default function Reference({ allReferencesData }) {
   return (
     <Layout home>

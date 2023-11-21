@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from './Header';  
 import Link from 'next/link';
+import Footer from './Footer';
 
 export const siteTitle = '凡人サラリーマン(副業奮闘中)';
 
@@ -22,11 +23,12 @@ export default function Layout({ children, home }) {
       </Head>
       <Header />
       <main className="container px-5 py-10 mx-auto">{children}</main>
-      {!home && (
+      {/* {!home && (
         <div className="justify-center" >
           <Link href="/">← Back to home</Link>
         </div>
-      )}
+      )} */}
+      <Footer />
     </div>
   );
 }

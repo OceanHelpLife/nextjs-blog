@@ -6,7 +6,6 @@ import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import getSortedReferencesData from '../lib/references';
 
-
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData().slice(0, 6);
   const allReferencesData = await getSortedReferencesData().slice(0,6)
@@ -25,13 +24,14 @@ export default function Home({ allPostsData, allReferencesData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className="text-gray-600 body-font justify-center">
-        <p>10年頑張っても目立った出世も出来ず、給料も上がらず・・・<br></br>サラリーマン人生に諦めが出てきた今日この頃。<br></br>一生懸命会社に尽くすことはもう無理・・・</p>
-        <p>もう若くないので『起業』や『転職』は怖い。</p>
-        <p>少しでも今の生活を良くしたい！</p>       
-      </section>
+      <Image 
+        src={"/images/副業検証Journey.png"}
+        width={1000}
+        height={400} 
+        alt="副業検証Journey"
+      />
       <section className="text-gray-600 body-font">
-        <h1 className="text-3xl font-bold text-center mb-6">
+        <h1 className="text-3xl font-bold text-center mt-12 mb-6">
           <Link href="/posts">
             Blog
           </Link>
@@ -60,7 +60,7 @@ export default function Home({ allPostsData, allReferencesData }) {
         </div>
       </section>
       <section className="text-gray-600 body-font">
-        <h1 className="text-3xl font-bold text-center mb-6">
+        <h1 className="text-3xl font-bold text-center mt-12 mb-6">
           <Link href="/references">
             Reference
           </Link>
