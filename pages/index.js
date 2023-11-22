@@ -79,12 +79,13 @@ export default function Home({ allPostsData, allReferencesData }) {
                       className="w-full h-auto object-cover object-center rounded-lg"
                     />
                     <h3 className="text-lg font-medium text-gray-900 mt-2">{title}</h3>
-                    <p className="text-gray-500">{description}</p>
-                    <span className="text-sm text-gray-600">{category}</span> 
+                    <p className="text-gray-500">一言メモ：{description}</p>
+                    <span className="text-sm text-gray-600">カテゴリー{category}</span> 
                   </div>
                 </Link>
               </li>
             ))}
+           <Link href="/posts" className='block border gray-300 mb-2 mt-6'>___more(Reference一覧を表示)___</Link>
           </ul>
         </div>
       </section>

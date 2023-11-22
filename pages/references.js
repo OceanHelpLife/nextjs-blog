@@ -36,7 +36,7 @@ export default function Reference({ allReferencesData }) {
                       className="w-full h-auto object-cover object-center rounded-lg"
                     />
                     <h3 className="text-lg font-medium text-gray-900 mt-2">{title}</h3>
-                    <p className="text-gray-500">{description}</p>
+                    <p className="text-gray-500">一言メモ：{description}</p>
                     <span className="text-sm text-gray-600">カテゴリー：{category}</span> 
                   </div>
                 </Link>

@@ -1,10 +1,17 @@
 [
-    {
-      "id": "book230720",
-      "title": "出版されている本の表紙を、紙媒体に無断で載せていいか",
-      "thumbnail": "https://labohan.com/blog/wp-content/uploads/2023/07/230720_1200-1024x576.jpg",
-      "url": "https://labohan.com/blog/book230720/",
-      "description": "",
-			"category": "ブック" 
-    }
-  ]
+  {
+    "id": "1",
+    "title": "ネットの画像や原稿を引用する際の正しい方法【著作権侵害に注意】",
+    "thumbnail": "https://kigyobengo.com/wordpress2/wp-content/uploads/2015/05/chosakuken_inyouhouhou_1.png",
+    "url": "https://kigyobengo.com/media/useful/148.html",
+    "description": "他サイトの画像表示に関する注意事項",
+    "category": "Web" 
+  },{
+    "id": "2",
+    "title": "ネットの画像や原稿を引用する際の正しい方法【著作権侵害に注意】",
+    "thumbnail": "https://kigyobengo.com/wordpress2/wp-content/uploads/2015/05/chosakuken_inyouhouhou_1.png",
+    "url": "https://kigyobengo.com/media/useful/148.html",
+    "description": "他サイトの画像表示に関する注意事項",
+    "category": "Web" 
+  }
+]
