@@ -1,6 +1,7 @@
 ---
 title: 'Web制作備忘録②〜Markdown形式とは'
 date: '2023-11-04'
+thumbnail: '/images/サムネ未.png'
 ---
 
 # マークダウン（Markdown）形式とは

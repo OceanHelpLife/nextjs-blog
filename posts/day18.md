@@ -120,7 +120,7 @@ export default function Reference({ allReferencesData }) {
 
 ```
 #### エラーについて
-```
+```js
 Error: Invalid src prop (https://example.com/path/to/thumbnail.jpg) on `next/image`, hostname "example.com" is not configured under images in your `next.config.js`
 ```
 こんなエラーが出てきてしまいましたが、next.configファイルで設定することにより解決しました。

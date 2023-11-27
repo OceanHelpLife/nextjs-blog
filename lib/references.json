@@ -8,10 +8,24 @@
     "category": "Web" 
   },{
     "id": "2",
-    "title": "ネットの画像や原稿を引用する際の正しい方法【著作権侵害に注意】",
-    "thumbnail": "https://kigyobengo.com/wordpress2/wp-content/uploads/2015/05/chosakuken_inyouhouhou_1.png",
-    "url": "https://kigyobengo.com/media/useful/148.html",
-    "description": "他サイトの画像表示に関する注意事項",
+    "title": "Googleアドセンスの審査に通りやすいサイトの特徴・設置の流れ",
+    "thumbnail": "https://shared.gmocloud.com/lp/iinkai/adsense/img/ximg_01.jpg.pagespeed.ic.bX4T7RuEje.webp",
+    "url": "https://shared.gmocloud.com/lp/iinkai/adsense/",
+    "description": "タイトルの通り",
     "category": "Web" 
+  },{
+    "id": "3",
+    "title": "Next.jsにフォームを追加/設置/設定する方法",
+    "thumbnail": "/images/reference1.png",
+    "url": "https://ssgform.com/with/next",
+    "description": "SSGform",
+    "category": "Web" 
+  },{
+    "id": "4",
+    "title": "Flowrift",
+    "thumbnail": "https://flowrift.com/img/open-graph.png",
+    "url": "https://flowrift.com/",
+    "description": "tailwindのテンプレートサイト",
+    "category": "web" 
   }
 ]

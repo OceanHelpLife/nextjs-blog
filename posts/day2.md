@@ -1,6 +1,7 @@
 ---
 title: 'Web制作忘備録①'
 date: '2023-11-03'
+thumbnail: '/images/サムネ未.png'
 ---
 
 web制作の備忘録として

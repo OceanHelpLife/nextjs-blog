@@ -85,7 +85,7 @@ export default function Home({ allPostsData, allReferencesData }) {
                 </Link>
               </li>
             ))}
-           <Link href="/posts" className='block border gray-300 mb-2 mt-6'>___more(Reference一覧を表示)___</Link>
+           <Link href="/references" className='block border gray-300 mb-2 mt-6'>___more(Reference一覧を表示)___</Link>
           </ul>
         </div>
       </section>

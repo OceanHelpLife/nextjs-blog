@@ -14,10 +14,7 @@ export default function Layout({ children, home }) {
           name="description"
           content="時間と場所にとらわれない働き方を模索していく体験記、アフィリエイトやweb制作等の検証を行う"
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(siteTitle)}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        <meta property="og:image" content="https://www.oceanhelplife.com/images/sozai1.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>

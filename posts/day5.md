@@ -1,6 +1,7 @@
 ---
 title: 'Header,Faviconの作成について【Day5】【備忘録④】'
 date: '2023-11-06'
+thumbnail: '/images/サムネ未.png'
 ---
 
 # Header(ヘッダー)を作ってみる

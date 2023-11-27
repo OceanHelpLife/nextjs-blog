@@ -1,6 +1,7 @@
 ---
 title: 'チャレンジ計画(Web制作/アフィリエイト編)'
 date: '2023-11-02'
+thumbnail: '/images/サムネ未.png'
 ---
 
 目標
