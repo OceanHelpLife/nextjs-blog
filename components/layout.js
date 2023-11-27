@@ -17,8 +17,8 @@ export default function Layout({ children, home }) {
         <meta property="og:image" content="https://www.oceanhelplife.com/images/sozai1.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9301397476226289"
-     crossorigin="anonymous"></script>
+        <meta name="google-adsense-account" content="ca-pub-9301397476226289" />
+
       </Head>
       <Header />
       <main className="container px-5 py-10 mx-auto">{children}</main>
