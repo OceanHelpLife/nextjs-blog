@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Header from './Header';  
-import Link from 'next/link';
 import Footer from './Footer';
 
 export const siteTitle = '凡人サラリーマン(副業奮闘中)';
@@ -10,6 +9,7 @@ export default function Layout({ children, home }) {
     <div className="">
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9301397476226289" crossorigin="anonymous"></script>
         <meta
           name="description"
           content="時間と場所にとらわれない働き方を模索していく体験記、アフィリエイトやweb制作等の検証を行う"
@@ -17,7 +17,6 @@ export default function Layout({ children, home }) {
         <meta property="og:image" content="https://www.oceanhelplife.com/images/sozai1.png" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="google-adsense-account" content="ca-pub-9301397476226289" />
 
       </Head>
       <Header />
